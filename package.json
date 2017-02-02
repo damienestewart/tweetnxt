@@ -1,0 +1,15 @@
+{
+  "name": "tweet-lego",
+  "version": "1.0.0",
+  "description": "Code allowing tweeting at nxt robot to move it.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damiene Stewart",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "node-bluetooth": "^1.1.0",
+    "twitter": "^1.7.0"
+  }
+}
