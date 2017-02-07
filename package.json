@@ -9,7 +9,7 @@
   "author": "Damiene Stewart",
   "license": "UNLICENSED",
   "dependencies": {
-    "node-bluetooth": "^1.1.0",
+    "bluetooth-serial-port": "^2.1.1",
     "twitter": "^1.7.0"
   }
 }
