@@ -2,6 +2,7 @@ const TwitterClient = require("./config.js");
 const PromptSync = require("prompt-sync")();
 const BSP = require("bluetooth-serial-port");
 const Bluetooth = new BSP.BluetoothSerialPort();
+const MASTER = "damienestewart"; // Twitter username that can issue disconnect message.
 
 /*
  * Define constants and necessary functions. I should do this in a different file...
@@ -120,7 +121,7 @@ var startTwitterStream = function() {
         console.log("@" + username + " told me to [" + text + "]. But I am busy right now. It'll have to wait.");
       }
 
-      if (text == "disconnect" && username == "damienestewart") {
+      if (text == "disconnect" && username == MASTER) {
         console.log("Recieved disconnect message from Master. Goodbye!");
         return Bluetooth.close();
       } else if (text == "forward") {
